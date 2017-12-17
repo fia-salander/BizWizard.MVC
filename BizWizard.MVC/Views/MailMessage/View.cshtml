@@ -1,0 +1,31 @@
+﻿@model BizWizard.Domain.Entity.MailMessage
+
+@{
+    ViewBag.Title = "View";
+}
+<article>
+    <header>
+        <h2>@Model.Name</h2>
+    </header>
+
+    <div>
+        <table>
+            <tr>
+                <th>@Html.DisplayNameFor(model => Model.Id)</th>
+                <td>@Model.Id</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => Model.ModifiedDate)</th>
+                <td>@Model.ModifiedDate</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => Model.IsSent)</th>
+                <td>@Html.Raw("<input type='checkbox' " + ((Model.IsSent == true) ? "checked" : "") + " disabled='disabled' />")</td>
+            </tr>
+        </table>
+    </div>
+    
+    <input type="button" value="Delete" class="delete" onclick="location.href='@Url.Action("Delete", "MailMessage", new {id = Model.Id})'" />
+    
+        @{Html.RenderPartial("_Links");}
+</article>

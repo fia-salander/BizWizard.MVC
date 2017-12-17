@@ -1,0 +1,35 @@
+﻿@model BizWizard.Domain.Entity.MailMessage
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<article>
+    <header>
+        <h2>Delete MailMessage</h2>
+    </header>
+
+    <div class="error">
+        @Html.ValidationMessage("ErrorMessage")
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+        <fieldset class="confirm">
+            <p>
+                Are you sure you want to delete <strong>@Model.Name</strong>
+                from the list?
+            </p>
+            <input class="delete" type="submit" value="Delete" />
+        </fieldset>
+
+        <div class="delete-button">
+            
+        </div>
+    }
+
+    @{Html.RenderPartial("_Links");}
+</article>

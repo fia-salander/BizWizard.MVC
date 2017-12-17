@@ -1,0 +1,46 @@
+﻿@model IEnumerable<BizWizard.Domain.Entity.MailMessage>
+@{
+    ViewBag.Title = "MailMessages";
+}
+<article>
+    <header>
+        <h2>Mailmessage list</h2>
+    </header>
+
+    <section>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            <fieldset class="nameForm">
+                <input class="searchBox" type="text" name="name" />
+                <button class="searchButton" type="submit">Search name</button>
+            </fieldset>
+
+            <div class="error">
+                <p>@ViewBag.Error</p>
+            </div>
+        }
+    </section>
+
+    <div id="DivGrid">
+        @{
+            var grid = new WebGrid(source: Model, canPage: true, rowsPerPage: 25, defaultSort: "ID");
+            grid.Pager(
+                WebGridPagerModes.NextPrevious);
+            @grid.GetHtml(
+                previousText: "Previous",
+                nextText: "Next",
+                tableStyle: "WebGrid",
+                headerStyle: "Header",
+                alternatingRowStyle: "altRow",
+                htmlAttributes: new { id = "DataTable" },
+                columns: grid.Columns(
+                    grid.Column("Name", format: item => Html.ActionLink((string)item.Name, "View", new { id = (int)item.Id })),
+                    grid.Column("ModifiedDate", "ModifiedDate"),
+                    grid.Column("IsSent", format: (item) => @Html.Raw("<input type='checkbox' " + ((item.IsSent== true) ? "checked" : "") + " disabled='disabled' />"))));
+        }
+        
+
+    </div>
+</article>

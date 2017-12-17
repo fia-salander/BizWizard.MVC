@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizWizard.MVC", "BizWizard.MVC\BizWizard.MVC.csproj", "{52DADB67-D276-4EED-A949-B5BD080FC13E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizWizard.MVC.Tests", "BizWizard.MVC.Tests\BizWizard.MVC.Tests.csproj", "{9EBABEC2-1A6E-4E34-B578-7A98AB2231B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52DADB67-D276-4EED-A949-B5BD080FC13E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52DADB67-D276-4EED-A949-B5BD080FC13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52DADB67-D276-4EED-A949-B5BD080FC13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52DADB67-D276-4EED-A949-B5BD080FC13E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EBABEC2-1A6E-4E34-B578-7A98AB2231B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EBABEC2-1A6E-4E34-B578-7A98AB2231B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EBABEC2-1A6E-4E34-B578-7A98AB2231B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EBABEC2-1A6E-4E34-B578-7A98AB2231B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6BA0DEE-1876-463A-9246-378975EDC0DA}
+	EndGlobalSection
+EndGlobal

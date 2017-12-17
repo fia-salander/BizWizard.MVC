@@ -1,0 +1,189 @@
+﻿article {
+    margin-left: 10%;
+    width: 960px;
+}
+
+header {
+    background-color: transparent;
+    float: none;
+    margin: 5% 5% 2.5% 5%;
+}
+
+footer {
+    border-top: 1px solid #CCC;
+    clear: left;
+    display: block;
+    float: left;
+    margin: 50px 0 20px 0;
+    padding-top: 25px;
+    width: 960px;
+}
+
+
+.container {
+    color: black;
+    margin: 5%;
+    width: 960px;
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 0.25em;
+}
+
+.body-content {
+    float: left;
+    margin-top: 150px;
+    width: 960px;
+}
+
+
+/* Styles for font
+-----------------------------------------------------------*/
+header h1 {
+    font-family: 'Futura', 'Calibri', 'sans-serif';
+    font-size: 3.3em;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 20px;
+}
+
+h2 {
+    font-family: 'Century Gothic', 'Segoe UI', 'sans-serif';
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+h3 {
+    color: #333333;
+    font-family: 'Century Gothic', 'Segoe UI', 'sans-serif';
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-left: 1.6em;
+}
+
+strong {
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Styles for header
+-----------------------------------------------------------*/
+.grey-line {
+    background-color: lightgrey;
+    display: block;
+    height: 1em;
+    width: 100%;
+}
+
+.navbar {
+    height: 150px;
+}
+
+.navbar-brand {
+    font-size: 4em;
+}
+
+.navbar-header {
+    overflow: hidden;
+}
+
+.navbar-inverse {
+    background-color: #B9DA2E;
+}
+
+
+/* Styles for links
+-----------------------------------------------------------*/
+.links {
+    float: left;
+    margin: 25px 20px;
+    width: 960px;
+}
+
+
+/* Styles for buttons
+-----------------------------------------------------------*/
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    background-color: lawngreen;
+}
+
+.confirm {
+    display: block;
+    float: left;
+    margin: 1em 0;
+    width: 960px;
+}
+
+.delete {
+    float: left;
+    margin: 30px 0 0 350px;
+}
+
+
+/* Styles for forms
+-----------------------------------------------------------*/
+form input, form label {
+    float: right;
+}
+
+.error {
+    color: red;
+    float: right;
+    line-height: 1em;
+    margin: 0 400px 0 0;
+    padding: 10px;
+}
+
+.nameForm {
+    float: right;
+    margin: 12px 0 0 225px;
+    padding: 10px;
+    width: inherit;
+}
+
+.searchBox {
+    float: left;
+    margin: 0 20px;
+}
+
+.searchButton {
+    float: right;
+    margin-right: 400px;
+}
+
+
+/* Styles for tables
+-----------------------------------------------------------*/
+input[type="checkbox"] {
+    margin-left: 15px;
+}
+
+table {
+    display: block;
+    float: left;
+    margin-top: 1em;
+    width: 960px;
+}
+
+th {
+    margin: 0.5em;
+    padding: 1em;
+}
+
+td {
+    margin: 0.5em;
+    padding: 1em;
+}
+
+.IndexTable:nth-child(even) {
+    background: #CCC
+}
+
+.IndexTable:nth-child(odd) {
+    background: #FFF
+}
+
+
+
+
